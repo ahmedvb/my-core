@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using my_core.Data;
 namespace my_core
 {
     public class Startup
@@ -26,6 +26,7 @@ namespace my_core
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<ICarDB,CarDB2>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

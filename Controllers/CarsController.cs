@@ -9,18 +9,21 @@ namespace my_core.Controllers
     [ApiController]
     public class CarsController : ControllerBase
     {
-        public ActionResult<IEnumerable<Car>>GetAllCars()
+        private readonly ICarDB _car;
+        public CarsController(ICarDB car)
         {
-            IEnumerable<Car>r=null;
-            CarDB c=new CarDB();
-            r=c.GetAllCars();
+            _car = car;
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<Car>> GetAllCars()
+        {
+            var r=_car.GetAllCars();
             return Ok(r);
         }
-        public ActionResult<Car>GetCar(int id)
+        [HttpGet("{id}")]
+        public ActionResult<Car> GetCar(int id)
         {
-            Car r=null;
-            CarDB c=new CarDB();
-            r=c.GetCarById(id);
+            var r=_car.GetCarById(id);
             return Ok(r);
         }
     }

@@ -15,6 +15,12 @@ namespace my_core.Data
             car.ModelYear=2018;
             car.Price=89000f;
             r.Add(car);
+            car=new Car();
+            car.Brand="Mazda";
+            car.Id=3;
+            car.ModelYear=2020;
+            car.Price=68000f;
+            r.Add(car);
             return r;
         }
         public Car GetCarById(int Id)
