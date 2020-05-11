@@ -14,7 +14,7 @@ namespace my_core.Controllers
             IEnumerable<Car>r=null;
             CarDB c=new CarDB();
             r=c.GetAllCars();
-            return Ok(r)
+            return Ok(r);
         }
         public ActionResult<Car>GetCar(int id)
         {
