@@ -4,9 +4,8 @@ namespace my_core.Data
 {
     public class CarDB : ICarDB
     {
-        IEnumerable<Car> ICarDB.GetAllCars()
+        public IEnumerable<Car> GetAllCars()
         {
-            //throw new System.NotImplementedException();
             List<Car> r = null;
             Car car=null;
             r=new List<Car>();
@@ -18,9 +17,8 @@ namespace my_core.Data
             r.Add(car);
             return r;
         }
-        Car ICarDB.GetCarById(int Id)
+        public Car GetCarById(int Id)
         {
-            //throw new System.NotImplementedException();
             Car r = null;
             r=new Car();
             r.Brand="Toyota";

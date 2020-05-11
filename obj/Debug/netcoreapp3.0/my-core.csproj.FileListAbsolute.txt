@@ -1,0 +1,6 @@
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\my-core.csprojAssemblyReference.cache
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\staticwebassets\my-core.StaticWebAssets.Manifest.cache
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\staticwebassets\my-core.StaticWebAssets.xml
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\my-core.MvcApplicationPartsAssemblyInfo.cache
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\my-core.AssemblyInfoInputs.cache
+C:\Work\asp-net\my-core\obj\Debug\netcoreapp3.0\my-core.AssemblyInfo.cs
