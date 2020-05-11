@@ -7,5 +7,6 @@ namespace my_core.Data
         //IEnumerable<Models.Car>GetAllCars();
         IEnumerable<Car> GetAllCars();
         Car GetCarById(int Id);
+        
     }
 }
