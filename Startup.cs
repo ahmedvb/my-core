@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,6 +28,7 @@ namespace my_core
         {
             services.AddControllers();
             services.AddScoped<ICarDB,CarDB2>();
+            services.AddDbContext<CarDbContext>(opt=>opt.UseSqlServer(Configuration.GetConnectionString("con1")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
